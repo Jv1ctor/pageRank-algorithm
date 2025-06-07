@@ -1,5 +1,4 @@
 package Linear.Matrices;
-
 import Linear.util.MatrixIdentity;
 
 public class Matrix implements MatrixIdentity {
@@ -23,7 +22,7 @@ public class Matrix implements MatrixIdentity {
 
     public void set(int i, int j, float value){
         int index = i * columns + j;
-        this.elements[index] = Math.round(value * 1000.0f) / 1000.0f;
+        this.elements[index] = value;
     }
 
     public int getRows() {
