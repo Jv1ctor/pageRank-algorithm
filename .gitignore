@@ -1,7 +1,7 @@
 ### IntelliJ IDEA ###
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+!libs/matrix-algebra-linear/src/main/**/out/
+!libs/matrix-algebra-linear/src/test/**/out/
 
 ### Eclipse ###
 .apt_generated
@@ -12,8 +12,8 @@ out/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+!libs/matrix-algebra-linear/src/main/**/bin/
+!libs/matrix-algebra-linear/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
