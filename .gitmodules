@@ -1,0 +1,3 @@
+[submodule "libs/matrix-algebra-linear"]
+	path = libs/matrix-algebra-linear
+	url = git@github.com:Jv1ctor/matrix-algebra-linear.git
