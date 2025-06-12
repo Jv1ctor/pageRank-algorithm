@@ -41,7 +41,6 @@ public class PageRank {
                 onesMatrix(transposeAdj.getRows())
         );
 
-        Matrix a0Normalize = (Matrix) MatrixOperators.times(1 / norm(a0), a0);
 
 
 
@@ -50,6 +49,7 @@ public class PageRank {
         int iter = 1000;
 
         for(int i = 0; i < iter; i++){
+            Matrix a0Normalize = (Matrix) MatrixOperators.times(1 / norm(a0), a0);
             Matrix an = ponderNormalize(MatrixOperators.dot(transposeAdj, matrixAdj), a0Normalize);
 
             Matrix err = MatrixOperators.sum(an, (Matrix) MatrixOperators.times(-1f, a0Normalize));
@@ -63,7 +63,7 @@ public class PageRank {
                 break;
             }
 
-            a0Normalize = an;
+            a0 = an;
         }
 
 
